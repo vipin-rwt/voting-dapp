@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-color: rgb(31, 30, 30);
+           overflow-x: hidden;
+        }
+        header{
+           /* border: 1px solid red; */
+           position: relative;
+        margin-left: -100px;
+        }
+        #log{
+            width: 25%;
+            height: 190px;
+        }
+        #i{
+            font-size: 2.0em;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-weight: 400;
+            bottom:-30px ;
+            left: 115px;
+            position: absolute;
+            color:rgb(255, 199, 132);
+            letter-spacing: 20px;
+        }
+        
+        .one{
+            width: 90%;
+            height: 600px;
+            background-image: linear-gradient(120deg,rgba(16, 0, 35, 0.6),rgb(37, 4, 28));
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            padding-top: 1.5%;
+            border-radius: 65px;
+        }
+
+       #iso1{
+            width: 80%;
+            height: 50%;
+            box-shadow: 0.1em 0.1em 0.1em rgb(12, 153, 188), -0.1em 0.3em 0.1em rgb(242, 145, 19), -0.2em -0.2em 0.9em rgb(49, 222, 249);
+            border-radius: 15px;
+           margin: 4%;
+        }
+
+        #welcome{
+            color: rgb(255, 241, 255);
+            font-family: 'Titillium Web', sans-serif;
+           font-size: 2.3em;
+           letter-spacing: 5px;
+           font-weight: 500;
+          text-shadow: 0 0 10px rgb(249, 255, 255);
+        }
+
+        .glassmorphism{
+            margin-top: 20%;
+            border: 1px solid white;
+            border-radius: 15px;
+            width: 23%;
+            height: 550px;
+            background: rgba(255, 255 ,255, 0.05);
+            backdrop-filter: blur(10px);
+            margin-left: auto;
+            margin-right: auto;
+            position: relative;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+        }
+
+        .glassmorphism>center>.img1{
+            width: 70px;
+            height: 50px;
+            margin-top: 5%;
+        }
+.glassmorphism>p{
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.1em;
+    line-height: 12px;
+}
+#img2{
+    width: 120px;
+    height: 130px;
+    background-color: white;
+    border-radius: 5px;
+    
+}
+
+#img3{
+    width: 80%;
+    height: 50px;
+    background-color: rgba(255, 255 ,255, 0.9);
+}
+      
+.glassmorphism>div{
+    color: white;
+    text-align: left;
+    margin-left: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.ring1{
+
+    border: 50px solid rgb(255, 131, 42);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    /* box-shadow: 0 0 30px rgb(117, 43, 253),0 0 30px rgb(139, 48, 250) ; */
+    margin-left: 34%;
+    margin-top: -60px;
+    backdrop-filter: blur(100px);
+}
+
+.ring2{
+    border-width: 1px ;
+    border-style:solid;
+    border-color:rgb(158, 78, 249) rgb(106, 7, 234) rgb(72, 207, 237);
+    background-image: linear-gradient(120deg,rgb(98, 210, 250),rgb(76, 234, 192),white);
+    border-radius: 50%;
+    width: 300px;
+    height:300px;
+    position: absolute;
+    margin-top: -250px;
+    margin-left: 49%;
+    z-index: -1;
+}
+
+#votetext{
+    color: white;
+    font-size: 2em;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    margin-top: 4%;
+    letter-spacing: 5px;
+}
+
+.flex1{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-image: linear-gradient(80deg,rgb(73, 41, 253),rgb(166, 147, 248) 50%);
+    width: 80%;
+    height: 320px;
+    margin: auto;
+    border-radius: 15px 15px 0px 0px;
+    margin-top: 15%;
+}
+
+.flex1>p{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    margin-left: 2%;
+    font-size: 1.2em;
+   
+}
+.flex1>p>span{
+    font-size: 2.1em;
+  font-weight: 500;
+}
+.flex1>img{
+    width: 52%;
+    height: 100%;
+    border-top-right-radius: 15px;
+}
+
+.flex2{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-image: linear-gradient(220deg,rgb(73, 41, 253),rgb(166, 147, 248) 50%);
+    width: 80%;
+    height: 320px;
+    margin: auto;
+    border-radius: 15px 0px 15px 15px;
+  
+}
+.flex2>img{
+    width: 52%;
+    height:100%;
+    border-bottom-left-radius: 15px;
+}
+.flex2>p{
+    display: inline-block;
+    text-align: center;
+    margin-top: 10%;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width: 50%;
+    margin-left: 2%;
+    font-size: 2.4em;
+    letter-spacing: 5px;
+   
+}
+.four{
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    width: 100%;
+    margin-top: 10%;
+}
+.four>img{
+    width: 60%;
+}
+.eth{
+    color: white;
+    display: inline;
+    font-size: 3em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.btn {
+    outline: none;
+    border-width: 0px;
+  width: 250px;
+  height: 50px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 25px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.3em;
+  margin-bottom: 5%;
+  box-shadow: 0 0 50px #6826f7;
+}
+
+.btn {
+  background: rgb(22,9,240);
+background: linear-gradient(0deg, rgba(22,9,240,1) 0%, rgba(49,110,244,1) 100%);
+  color: #fff;
+  border: none;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  margin-top: 1%;
+}
+.btn:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+}
+.btn:hover {
+  color: #fff;
+  border: none;
+  background: transparent;
+}
+.btn:hover:after {
+  background: rgb(0,3,255);
+background: linear-gradient(0deg, rgba(2,126,251,1) 0%,  rgba(0,3,255,1)100%);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.ready{
+    color: white;
+    font-size: 3em;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 10%;
+
+}
+
+    </style>
+</head>
+<body>
+     
+    <header>
+<img src="final.svg" alt="vote app logo" srcset="" id="log">
+<p id="i">i-Vote</p>
+    </header>
+
+
+ <main>
+   <section class="one">
+       <p id="welcome">Welcome to India's first blockchain based Voting system !</p>
+       <center><img src="vote.jpg" alt="" id="iso1"></center>
+   </section>
+
+   <section class="two">
+
+ <div class="ring1">
+
+ </div>
+
+        <div class="glassmorphism">
+            <center><img src="bharat.png" alt="" class="img1"></center>
+           <p>Election commission of India</p>
+           <p>ELECTORS PHOTO IDENTITY CARD</p>
+           <center><img src="face.png" alt="" id="img2"></center>
+<br>
+           <center><img src="bar.png" alt=""  id="img3"></center>
+           
+           <p>GBNOO98654789</p>
+
+           <div class="glass">
+               <p>Elector's Name&emsp;&emsp;&nbsp; :   Mr johnny</p>
+               <p>Father's name&emsp;&emsp;&nbsp;&nbsp;&ensp;:   Doe</p>
+               <p>Sex &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;&ensp;:   Male</p>
+               <p>DATE OF BIRTH  &emsp;&emsp;&nbsp;:   30-02-2002</p>
+           </div>
+
+        </div>
+        <div class="ring2"></div>
+
+        <p id="votetext">Make sure you have your virtual voter id card assigned</p>
+   </section>
+	  
+   <section class="three">
+       <div class="flex1">
+           <p><span>Worried about your data!</span>
+               <br>
+            don't be so cause you are empowered with world's latest and most secured technology.
+               Rest assure and do what you are meant to do.</p>
+               <img src="blockchain.jpg" alt="">
+       </div>
+       <div class="flex2">
+        <img src="ethereum.jpg" alt="">
+        <p>Built on top of robust platform ethereum </p>
+        </div>
+   </section>
+
+   <section class="four">
+      <p class="eth">Keep some ethers on hand or miss the fun</p>
+      <img src=" eth.png" alt="">
+
+
+   </section>
+
+   <p class="ready">Ready to vote ?</p>
+   <center> <a href="index1.html"><button class="btn">let's go</button></a></center>
+      
+
+	</main>
+   
+</body>
+
+</html>
